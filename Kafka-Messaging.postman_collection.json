@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "1e886855-ccff-4c37-86a4-c9d6d8f4c96d",
+		"name": "Kafka-Messaging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3482990"
+	},
+	"item": [
+		{
+			"name": "Fetch all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetch all books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8181/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8181",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 23 Mar 2024 22:53:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"isbn\": \"978-1-2345-6789-0\",\n            \"title\": \"The Shadow in the Attic\",\n            \"author\": 1\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-1\",\n            \"title\": \"Beyond the Horizon\",\n            \"author\": 2\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-2\",\n            \"title\": \"The Last Ember\",\n            \"author\": 3\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-3\",\n            \"title\": \"The Forgotten Key\",\n            \"author\": 4\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-4\",\n            \"title\": \"The Silence in the Woods\",\n            \"author\": 5\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-5\",\n            \"title\": \"In the Eye of the Storm\",\n            \"author\": 6\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-6\",\n            \"title\": \"The Seventh Sense\",\n            \"author\": 7\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-7\",\n            \"title\": \"The Secret of the Stars\",\n            \"author\": 8\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-8\",\n            \"title\": \"The Forgotten Ones\",\n            \"author\": 9\n        },\n        {\n            \"isbn\": \"978-1-2345-6789-9\",\n            \"title\": \"The Lost Heirloom\",\n            \"author\": 10\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-0\",\n            \"title\": \"The Whispering Tree\",\n            \"author\": 11\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-1\",\n            \"title\": \"The Last Harvest\",\n            \"author\": 12\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-2\",\n            \"title\": \"The Darkened Path\",\n            \"author\": 13\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-3\",\n            \"title\": \"The Forgotten City\",\n            \"author\": 14\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-4\",\n            \"title\": \"The Crystal Key\",\n            \"author\": 15\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-5\",\n            \"title\": \"The Seventh Scroll\",\n            \"author\": 16\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-6\",\n            \"title\": \"The Witching Hour\",\n            \"author\": 17\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-7\",\n            \"title\": \"The Darkening Skies\",\n            \"author\": 18\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-8\",\n            \"title\": \"The Cursed Mirror\",\n            \"author\": 19\n        },\n        {\n            \"isbn\": \"978-1-2345-6780-9\",\n            \"title\": \"The Ghost in the Mirror\",\n            \"author\": 20\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"sort\": {\n            \"empty\": true,\n            \"unsorted\": true,\n            \"sorted\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 3,\n    \"totalElements\": 51,\n    \"last\": false,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"unsorted\": true,\n        \"sorted\": false\n    },\n    \"numberOfElements\": 20,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch all Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8282/authors",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fetch all Authors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8282/authors",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 23 Mar 2024 22:53:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"name\": \"Abigail Rose\",\n            \"age\": 80\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Adam Parker\",\n            \"age\": 36\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Adeline Rivers\",\n            \"age\": 49\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Aiden Knight\",\n            \"age\": 87\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Alexa Stone\",\n            \"age\": 34\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Alexander Chase\",\n            \"age\": 22\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Alexandria Blake\",\n            \"age\": 43\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Allison Ford\",\n            \"age\": 56\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Amelia Reed\",\n            \"age\": 63\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Andrew Knight\",\n            \"age\": 77\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Annabelle Scott\",\n            \"age\": 68\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Anthony Green\",\n            \"age\": 70\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Ariana Cole\",\n            \"age\": 84\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Ashton Stone\",\n            \"age\": 28\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Audrey Morgan\",\n            \"age\": 48\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Ava Barnes\",\n            \"age\": 81\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Benjamin Parker\",\n            \"age\": 25\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Bethany Grey\",\n            \"age\": 38\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Blake Walker\",\n            \"age\": 67\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Bradley Evans\",\n            \"age\": 69\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"sort\": {\n            \"empty\": true,\n            \"unsorted\": true,\n            \"sorted\": false\n        },\n        \"offset\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"totalElements\": 50,\n    \"totalPages\": 3,\n    \"last\": false,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"unsorted\": true,\n        \"sorted\": false\n    },\n    \"numberOfElements\": 20,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch All Notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8383/notifications",
+					"host": [
+						"localhost"
+					],
+					"port": "8383",
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fetch All Notifications",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8383/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 23 Mar 2024 22:52:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"message\": \"Book 'The Shadow in the Attic' [978-1-2345-6789-0] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:05.685001\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 2,\n            \"message\": \"Book 'Beyond the Horizon' [978-1-2345-6789-1] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:10.07377\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 3,\n            \"message\": \"Book 'The Last Ember' [978-1-2345-6789-2] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:15.035771\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 4,\n            \"message\": \"Book 'The Forgotten Key' [978-1-2345-6789-3] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:20.046835\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 5,\n            \"message\": \"Book 'The Silence in the Woods' [978-1-2345-6789-4] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:25.038392\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 6,\n            \"message\": \"Book 'In the Eye of the Storm' [978-1-2345-6789-5] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:30.047735\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 7,\n            \"message\": \"Book 'The Seventh Sense' [978-1-2345-6789-6] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:35.060955\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 8,\n            \"message\": \"Book 'The Secret of the Stars' [978-1-2345-6789-7] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:40.038038\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 9,\n            \"message\": \"Book 'The Forgotten Ones' [978-1-2345-6789-8] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:45.041792\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 10,\n            \"message\": \"Book 'The Lost Heirloom' [978-1-2345-6789-9] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:50.043812\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 11,\n            \"message\": \"Book 'The Whispering Tree' [978-1-2345-6780-0] persisted!\",\n            \"timestamp\": \"2024-03-23T22:49:55.028646\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 12,\n            \"message\": \"Book 'The Last Harvest' [978-1-2345-6780-1] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:00.044212\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 13,\n            \"message\": \"Book 'The Darkened Path' [978-1-2345-6780-2] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:05.060613\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 14,\n            \"message\": \"Book 'The Forgotten City' [978-1-2345-6780-3] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:10.024823\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 15,\n            \"message\": \"Book 'The Crystal Key' [978-1-2345-6780-4] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:15.047301\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 16,\n            \"message\": \"Book 'The Seventh Scroll' [978-1-2345-6780-5] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:20.055758\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 17,\n            \"message\": \"Book 'The Witching Hour' [978-1-2345-6780-6] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:25.058785\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 18,\n            \"message\": \"Book 'The Darkening Skies' [978-1-2345-6780-7] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:30.043261\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 19,\n            \"message\": \"Book 'The Cursed Mirror' [978-1-2345-6780-8] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:35.039256\",\n            \"service\": \"book-persistence\"\n        },\n        {\n            \"id\": 20,\n            \"message\": \"Book 'The Ghost in the Mirror' [978-1-2345-6780-9] persisted!\",\n            \"timestamp\": \"2024-03-23T22:50:40.037986\",\n            \"service\": \"book-persistence\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"sort\": {\n            \"empty\": true,\n            \"unsorted\": true,\n            \"sorted\": false\n        },\n        \"offset\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"totalPages\": 3,\n    \"totalElements\": 42,\n    \"last\": false,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"unsorted\": true,\n        \"sorted\": false\n    },\n    \"numberOfElements\": 20,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		}
+	]
+}
